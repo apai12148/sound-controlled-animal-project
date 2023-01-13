@@ -7,6 +7,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
     </head>
 
     <body>
@@ -15,7 +16,7 @@
             <p>Note: Play different sounds like meowing, barking, roaring, and mooing</p>
             <center>
                 <br>
-                <button class="btn btn-warning" onclick="startClassification();"> START </button>
+                <button id="button" class="btn btn-warning" onclick="startClassification();"> START </button>
                 <h4 id="audio_number"></h4>           
                 <h4 id="class_name"></h4>
                 <br>

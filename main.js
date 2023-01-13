@@ -18,11 +18,11 @@ function gotResults(error,result){
         random_number_g = Math.floor(Math.random() * 225) + 1;
         random_number_b = Math.floor(Math.random() * 225) + 1;
 
-        document.getElementById("result_label").innerHTML = 'I can hear - ' + result[0].label;
-        document.getElementById("result_confidence").innerHTML = 'Accuracy' + (result[0].confidence*100).toFixed(2)+"%";
+        document.getElementById("audio_number").innerHTML = 'I can hear - ' + result[0].label;
+        document.getElementById("class_name").innerHTML = 'Accuracy' + (result[0].confidence*100).toFixed(2)+"%";
 
-        document.getElementById("result_label").style.color = "rgb(" + random_number_r +"," + random_number_g + "," + random_number_b + " )"
-        document.getElementById("result_confidence").style.color = "rgb(" + random_number_r + "," + random_number_g + "," + random_number_b + ")"
+        document.getElementById("audio_number").style.color = "rgb(" + random_number_r +"," + random_number_g + "," + random_number_b + " )"
+        document.getElementById("class_name").style.color = "rgb(" + random_number_r + "," + random_number_g + "," + random_number_b + ")"
 
         img = document.getElementById('cat.img')
         img1 = document.getElementById('cow.img')
